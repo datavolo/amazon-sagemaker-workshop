@@ -49,15 +49,15 @@ chmod +x videogames.sh
   - Ohio:  825641698319.dkr.ecr.us-east-2.amazonaws.com/xgboost:latest
   - Ireland:  685385470294.dkr.ecr.eu-west-1.amazonaws.com/xgboost:latest
    
-- bucket:  the name of the S3 bucket you used in your notebook.  It should look like:  `s3://smworkshop-john-smith`.
+- bucket:  the URL of the S3 bucket you used in your notebook.  It should look like:  `s3://smworkshop-john-smith`.
 
 - region:  the region code for the region where you are running this workshop, either `us-east-1` for N. Virginia, `us-west-2` for Oregon, `us-east-2` for Ohio, or `eu-west-1` for Ireland.
 
 ```
 # Fill in the values of these four variables
 arn_role=<arn-of-your-notebook-role>
-training_image=<training-image-for-region>
-bucket=<name-of-your-s3-bucket>
+training_image=<training-container-image-for-region>
+bucket=<url-of-your-s3-bucket>
 region=<your-region>
 
 prefix=/sagemaker/videogames_xgboost
